@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#container2{
+    
+    min-height: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50% ,  rgba(0,0,0,0.5)50%), url(furniture.jpg);
+    background-position: center;
+    background-size:cover ;
+    height: 100vh;
+    
+    
+
+}
+span{
+   
+    padding-left: 8px; 
+
+}
+.top{
+
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+ }
+
+ .logo3{
+     font-family: Lucida Handwriting;
+     text-shadow: 12px -2px 20px peachpuff ;
+     color: white;
+     font-size: 20px; 
+     padding-left: 8px;
+     padding-bottom: 15px;
+ }
+ .logo2{
+     color: white;
+     padding-left: 8px;
+     font-family: sans-serif;
+ }
+ .logo1 a{
+    text-decoration: none;
+    color:rgb(240, 67, 67);
+ }
+
+ .con{
+    display: flex;
+    position: absolute;
+    background: aliceblue;
+    width:300px;
+    height: 100px;
+    border:none;
+    padding:10px;
+ }
+
+ .navigationBar ul, .navigationBar li{
+    margin: 0;
+    padding: 0px;
+}
+
+.navigationBar{
+    
+    float: left;
+    justify-content: space-between;
+    padding-left: 20px;
+    margin-left:20px;
+    display: flex;
+
+}
+.navigationBar ul{
+    list-style: none;
+    width: 100%;
+    padding-top: 25px;
+}
+.navigationBar li{
+    float: left;
+    position:relative;
+    width: auto;
+    
+}
+.navigationBar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: Arial ;
+    transition: all 0.25 ease;
+    text-align: center;
+    padding: 20px 20px;
+    display: inline-block;
+    
+}
+
+#sub{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 10px;
+    visibility: hidden;
+    z-index: 1;
+}
+li:hover ul#sub{
+    opacity: 1;
+    top: 35;
+    visibility: visible;
+    justify-content: space-between;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50% ,  rgba(0,0,0,0.5)50%);
+}
+
+#sub{
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+    
+}
+#sub li{
+    float: none;
+    width: 100%;
+    height: 100%;
+}
+
+ul li a:hover{
+    color: rgb(241, 205, 104);
+}
+.search{
+    width: 300px;
+    float: left ;
+    padding-top: 25px ;
+    padding-left: 20px;
+    
+}
+
+.srch{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    height: 30px;
+    font-size: 13px;
+    background:transparent ;
+    color: white;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 5px;
+    float:left;
+    padding-right: 10px;
+}
+
+.btn{
+    width: 85px;
+    height: 30px;
+    background: wheat;
+    border:2px solid wheat;
+    margin-top: 5px;
+    float: right;
+    font-size: 13px;
+    border-radius: 10px;
+    font-family: monospace;
+
+}
+
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+.srch:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+

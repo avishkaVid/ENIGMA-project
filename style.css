@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+    
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(furniture.jpg) no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+}
+.wrapper{
+
+    width: 420px;
+    background: transparent;
+    border:2px solid rgba(255,255,255,.2); 
+    color:white;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 30px 40px;
+    
+}
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+}
+.input-box input{
+
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: 2px solid rgba(255,255,255,.2);
+    border-radius: 40px;
+    color: white;
+    font-size: 15px;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+
+    color: white;
+}
+.input-box i{
+    position: absolute;
+    right:20px;
+    top:30%;
+    transform: translate(-50%);
+    font-size:15px ;
+}
+.wrapper .remember-forgot{
+    justify-content: space-between;
+    display: flex;
+    margin: -12px 0 12px;
+    font-size: 14px;
+}
+.wrapper.remember-forgot label input{
+    accent-color: #fff;
+    margin: right 3px;
+
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+.wrapper .btn{
+    width:100%;
+    height:40px;
+    background:#fff;
+    border:none;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba (0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color:#333;
+
+}
+.register p{
+
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px 0 15px;
+    color:#fff;
+  
+}
+.register p a{
+    color:#fff;
+    font-weight: 800;
+    text-decoration: none;  
+}
+.register p a:hover{
+    text-decoration: underline;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 40px;
+}
+.role{  
+    border: 1px solid;
+    appearance: none;
+    padding: 0 20px 0 15px;
+    width: 100%;
+    color:black;
+    background-color:#edc9af;
+    font-size: 15px;
+    border-radius: 25px;
+
+}
+.dropdown .icon-con{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-con i{
+    font-size: 15px;
+    color: white;
+}

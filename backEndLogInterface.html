@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <title>First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="wrapper">
+    <form  name ="form" action="backEndLogin.php" onsubmit="return isvalid() "  method="post">
+    <h1>Login</h1>
+
+    <div class="input-box">
+        <input type ="text" placeholder="User Name"  name="username" autocomplete="off">
+        <i class='bx bxs-user'></i>
+    </div>
+
+    <div class ="input-box">
+        <input type ="password" placeholder="Password"  name="pass" autocomplete="off">
+        <i class='bx bxs-lock'></i>
+    </div>
+
+    <div class= "remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+
+    </div>
+
+    <button class="btn" type="submit" name="log">Login</button>
+
+    <!--<div class="register">
+        <p>Don't have an account? <a href="enrol.php">Enrol here</a></p>
+    </div> -->
+
+
+    </form>
+    </div>
+    <script>
+        function isvalid(){
+        var user= document.form.username.value;
+        var pass= document.form.pass.value;
+
+        if(user.length=="" || pass.length==""){
+            alert("User name or Password can't be empty");
+            return false
+        }
+    }
+    </script>
+</body>
+
+</html>

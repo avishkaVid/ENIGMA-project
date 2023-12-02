@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background:white;
+    width: 320px;
+    height: 370px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-img{
+    height: 270px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.staff{
+    background-image: url(Image/staff.jpg);
+    
+}
+.itemMg{
+    background-image: url(Image/itemMg.jpg);
+}
+.inquiry{
+    background-image: url(Image/inquiry.png);
+}
+.report{
+    background-image: url(Image/report.png);
+}
+.bill{
+    background-image: url(Image/bill.png);
+}
+
+.customer_det{
+    background-image: url(Image/customer.jpg);
+}
+
+.viewStore{
+    background-image: url(Image/store.jpg);
+}
+
+.card h2{
+    padding:5px;
+
+}
+.card p{
+    padding: 5px;
+}
+.card a{
+    background-color: rgb(19, 146, 185);
+    color:white;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(245, 143, 9);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 1s ease;
+}
+.heading1{
+
+    text-align: center;
+    padding: 20px;
+    color: cornsilk;
+    font-family: Helvetica;
+    font-size: 35px;
+}
+.btn{
+    width: 200px;
+    padding: 12px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    border:2px solid coral;
+    background: transparent;
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    position: relative;
+    overflow:hidden;
+    text-decoration: none;
+    margin-left: 530px;
+
+}
+span{
+    background:coral;
+    height: 100%;
+    width:0%;
+    border-radius:20px ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.7s;
+}
+
+button:hover span{
+    width: 100%;
+}
+

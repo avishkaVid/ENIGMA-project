@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.849);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    background:white;
+    width: 320px;
+    height: 370px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.card-img{
+    height: 270px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.queen{
+    background-image: url(Image/queen.jpg);
+    
+}
+.king{
+    background-image: url(Image/king.jpg);
+}
+.children{
+    background-image: url(Image/child.jpg);
+}
+.todler{
+    background-image: url(Image/todler.jpg);
+}
+.single{
+    background-image: url(Image/single.jpg);
+}
+.adjustable{
+    background-image: url(Image/adjustable.jpg);
+}
+.card h2{
+    padding:5px;
+
+}
+.card p{
+    padding: 5px;
+}
+.card a{
+    background-color: rgb(19, 146, 185);
+    color:white;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(9, 32, 245);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: all 1s ease;
+}
+.heading1{
+
+    text-align: center;
+    padding: 20px;
+    color: cornsilk;
+    font-family: Helvetica;
+    font-size: 35px;
+}
+
+.navbar{
+    width: 85%;
+    margin:auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-weight: bold;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: coral;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#fff;
+}
+.logo a{
+    width: 100px;
+    cursor: pointer;
+    color: coral;
+    font-size: 35px;
+    text-shadow: white 3px -1px 3px;
+    text-decoration: none;
+}
